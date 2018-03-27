@@ -13,6 +13,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'), url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -56,26 +63,27 @@ footer {
     padding-top: 48px;
 }
 
-
 .menu {
     margin-left: 209px;
     display: inline-block;
     position: relative;
     bottom: 7px;
-
 }
 
-nav {
+nav ul li{
     display: inline-block;
+    padding: 40px 22px 0px 25px;
+    cursor: pointer;
+    padding-bottom: 40px;
 }
 
-ul {
-    display: inline-block;
+nav ul li:hover {
+    border-top: 4px solid white;
+    transition: .3s;
 }
 
-ul li{
-    display: inline-block;
-    padding: 0px 22px 0px 25px;
+nav ul li:last-child {
+    padding: 40px 15px 0px 25px;
 }
 
 nav ul li a {
@@ -85,7 +93,22 @@ nav ul li a {
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    padding-bottom: 5px;
+}
+
+.social-icon i {
+    color: #dab33e;
+    font-size: 21px;
+    padding-right: 13px;
+}
+
+.social-icon i:hover {
+    color: white;
+}
+
+.social-icon {
+    display: inline-block;
+    position: relative;
+    bottom: 7px;
 }
 
 .promo {
@@ -93,6 +116,69 @@ nav ul li a {
     width: 100%;
     height: 750px;
 }
+.slogan-text {
+    display: inline-block;
+    height: 150px;
+    text-align: center;
+    max-width: 1000px;
+    margin-left: calc(50% - 500px);
+    margin-top: 216px;
+}
+
+.slogan-text h2 {
+    font-family: yeseva_oneregular;
+    font-size: 90px;
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    line-height: 1.33;
+}
+
+.devider-promo{
+    display: inline-block;
+    margin-left: calc(50% - 113px);
+    margin-top: 108px;
+}
+
+.button-book-a-table {
+    text-decoration: none;
+    border: 1px solid black;
+    font-family: latoregular;
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+    width: 226px;
+    height: 55px;
+    text-align: center;
+    line-height: 3;
+    background-color: rgba(6,8,8,0.6);
+    margin-left: calc(50% - 244px);
+    margin-right: 27px;
+    margin-top: 34px;
+}
+
+.button-book-a-table:hover {
+    background-color: rgba(6,8,8,0.8);
+}
+
+.button-see-the-menu {
+    text-decoration: none;
+    border: 1px solid white;
+    font-family: latoregular;
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+    width: 226px;
+    height: 55px;
+    text-align: center;
+    line-height: 3;
+    background-color: rgba(255,255,255,0.25);
+}
+
+.button-see-the-menu:hover {
+    background-color: rgba(255,255,255,0.45);
+}
+
 .bac1 {
     background-color: grey;
     width: 100%;
